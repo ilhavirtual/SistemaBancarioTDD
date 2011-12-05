@@ -1,13 +1,12 @@
 
 public class ContaCorrente {
 
-	Cliente cliente = new Cliente();
-	String numeroDaAgencia;
-	String numeroDaConta;
+	private Cliente cliente = new Cliente();
+	private String numeroDaAgencia;
+	private String numeroDaConta;
 	private double saldo = 1000.0;
-	double limite = 100.0;
-	boolean premiada = true;
-	
+	private double limite = 100.0;
+	private boolean premiada = true;
 	
 	public void sacar(double valor) {
 		saldo = saldo - valor;
@@ -19,6 +18,5 @@ public class ContaCorrente {
 
 	public void depositar(double valor) {
 		saldo = saldo + valor;
-		
 	}
 }
